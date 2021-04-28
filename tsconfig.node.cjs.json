@@ -1,0 +1,11 @@
+// -*- jsonc -*-
+// https://www.typescriptlang.org/tsconfig
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["./src/node.ts"],
+  "compilerOptions": {
+    "outDir": "./dist/cjs",
+    "lib": ["esnext"],
+    "module": "commonjs"
+  }
+}

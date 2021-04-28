@@ -1,0 +1,11 @@
+// -*- jsonc -*-
+// https://www.typescriptlang.org/tsconfig
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["./src/browser.ts"],
+  "compilerOptions": {
+    "outDir": "./dist/esm",
+    "lib": ["dom", "esnext"],
+    "module": "esnext"
+  }
+}
