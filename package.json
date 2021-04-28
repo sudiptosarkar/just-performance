@@ -1,15 +1,15 @@
 {
   "name": "just-performance",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Isomorphic ponyfill wrapping native browser performance and node.js perf_hooks performance",
   "license": "MIT",
-  "type": "module",
-  "main": "./dist/node.js",
-  "browser": "./dist/browser.js",
   "exports": {
     ".": {
-      "node": "./dist/node.js",
-      "default": "./dist/browser.js"
+      "node": {
+        "import": "./dist/esm/node.js",
+        "require": "./dist/cjs/node.js"
+      },
+      "default": "./dist/esm/browser.js"
     }
   },
   "repository": {
@@ -26,7 +26,7 @@
     "src"
   ],
   "scripts": {
-    "prepack": "tsc -p tsconfig.browser.json && tsc -p tsconfig.node.json"
+    "prepack": "tsc -p tsconfig.browser.esm.json && tsc -p tsconfig.node.cjs.json && tsc -p tsconfig.node.esm.json"
   },
   "devDependencies": {
     "@types/node": "15.0.1",
