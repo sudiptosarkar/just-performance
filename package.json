@@ -29,7 +29,7 @@
     "src"
   ],
   "scripts": {
-    "prepack": "tsc -p tsconfig.browser.esm.json && tsc -p tsconfig.node.cjs.json && tsc -p tsconfig.node.esm.json"
+    "prepack": "tsc -p tsconfig.browser.esm.json && echo '{\n\t\"type\": \"module\"\n}' > dist/esm/package.json && tsc -p tsconfig.node.cjs.json && tsc -p tsconfig.node.esm.json"
   },
   "devDependencies": {
     "@types/node": "15.0.1",
