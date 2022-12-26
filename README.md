@@ -1,4 +1,4 @@
-# just-performance
+# just-performance-es6-compat
 
 Isomorphic ponyfill wrapping browser performance and node.js perf_hooks performance.
 
@@ -7,13 +7,13 @@ Isomorphic ponyfill wrapping browser performance and node.js perf_hooks performa
 ### Browser
 
 ```js
-import { performance } from "just-performance";
+import { performance } from "just-performance-es6-compat";
 ```
 
 ## node.js
 
 ```js
-import { performance } from "just-performance";
+import { performance } from "just-performance-es6-compat";
 ```
 
 ## License
