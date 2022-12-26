@@ -1,5 +1,5 @@
 {
-  "name": "just-performance",
+  "name": "just-performance-es6-compat",
   "version": "4.3.0",
   "description": "Isomorphic ponyfill wrapping native browser performance and node.js perf_hooks performance",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "src"
   ],
   "scripts": {
-    "prepack": "tsc -p tsconfig.browser.esm.json && echo '{\n\t\"type\": \"module\"\n}' > dist/esm/package.json && tsc -p tsconfig.node.cjs.json && tsc -p tsconfig.node.esm.json"
+    "prepack": "tsc --build tsconfig.browser.esm.json && tsc --build tsconfig.node.cjs.json && tsc --build tsconfig.node.esm.json && echo '{\n\t\"type\": \"module\"\n}' > dist/esm/package.json "
   },
   "devDependencies": {
     "@types/node": "15.0.1",
