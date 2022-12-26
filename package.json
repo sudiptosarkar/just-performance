@@ -17,13 +17,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhurliman/just-performance.git"
+    "url": "https://github.com/sudiptosarkar/just-performance.git"
   },
   "author": {
     "name": "John Hurliman",
     "email": "jhurliman@jhurliman.org"
   },
-  "homepage": "https://github.com/jhurliman/just-performance",
+  "contributors": [
+    {
+      "name": "John Hurliman",
+      "email": "jhurliman@jhurliman.org"
+    },
+    {
+      "name": "Sudipto Sarkar",
+      "email": "sudiptosarkar@visioplanet.org",
+      "url": "https://github.com/sudiptosarkar"
+    }
+  ],
+  "homepage": "https://github.com/sudiptosarkar/just-performance",
   "files": [
     "dist",
     "src"
