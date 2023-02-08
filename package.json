@@ -43,7 +43,7 @@
     "prepack": "tsc --build tsconfig.browser.esm.json && tsc --build tsconfig.node.cjs.json && tsc --build tsconfig.node.esm.json && echo '{\n\t\"type\": \"module\"\n}' > dist/esm/package.json "
   },
   "devDependencies": {
-    "@types/node": "15.0.1",
+    "@types/node": "18.13.0",
     "typescript": "4.2.2"
   }
 }
